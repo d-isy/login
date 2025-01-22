@@ -7,8 +7,6 @@ body {
 { 
   padding:20px;
   color:  #fff;
-  background-color: #abadb3;
-  border: #9eafc0 solid 1px;
   border-radius: 5px;
   clear:left;
 } 
@@ -24,28 +22,28 @@ img{
   top: 10%;
   left:  0;
   width: 50%;
-  height:150%;
+  height:140%;
   z-index: 1;
 }
 form {
     border: 1px solid #dbcedc;
-    border-radius: 5vw;
+    border-radius: 2vw;
     color: #24313d;   
     background: #f4f2f4;
     text-align:justify; 
     margin:7% 0% 0% 60%;
     width: 30%;
+    height: 70%;
 
 }
 
 div.contenedor{
-  flex-direction: row;
-  
+  flex-direction: column;
   display: flex;
   justify-content: right;
   align-items: right;
-  margin: 0% 0% 0% 0%;
-  padding: 0% 0% 0% 0%;
+  margin: 0%;
+  padding: 0%;
 
 }
 label {
@@ -83,36 +81,68 @@ input.buscar {
     cursor: help;
     z-index: 5;
 }
-div.terminos {
-    margin:1%;
-    padding:3%;
-    font-size:1vw;
-    
-}
 input[type*="checkbox"]{
-    width: 6%;
-    margin: 0% 0% 6% 7%;
+  box-sizing: border-box;
+  height: 2vh;
+    width: 2vw;
+    margin: 0% 0%;
     padding:0;
     text-align: justify;
-
+  }
+  div.terminos{
+    margin: 6% 3%;
+    width: 80%;
+    height: 2vh;
+    display:flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+  }
+  #aceptar{
+    text-align: start;
+    white-space: nowrap;
+    margin: 0%;
   }
   
 a:active {  
-   color:#251212; 
+   color:#838099; 
   } 
   a:hover {
-    background-color:#000000;
-    color: #643636;
-  }       
+    
+    color: #ffffff;
+  }           
   a:visited {   
     color:#131416;
   }      
   a:link {  
-    background-color:#d8d8d8;
+    text-decoration: none;
+    margin-left: 2%;;
     color:#927ed3;
   } 
+  .enviar{
+    width: 35vw;
+    display:flex;
+    justify-self:flex-end;
+    justify-content: center;
+    align-self: self-end;
+    margin:0 7%;
+  } 
+  input[type="submit"]{
+    background-color: #566f85;
+    color: #141517;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2%;
+    margin: 3%;
+    border-right:solid 2px #141517;
+    text-shadow: #e7ecf1;
+    border-bottom: solid 2px #141517;
+    
+  }
 
-@media (max-width: 1024px) {
+@media (max-width: 2024px) {
     body {
         background-color: #44607f;
         background-image: none;
@@ -132,6 +162,13 @@ a:active {
         margin: 5% auto;
         width: 40%;
     }
+    .enviar{
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+      align-self:center;
+  
+    }
     input.buscar {
       margin: 1% 15% 15% 15%;
     top: 1%;
@@ -141,18 +178,13 @@ a:active {
     padding: 1.4%;
         
     }
-    div.terminos{
-      
-      margin:1%;
-      padding:3%;
-      font-size:1.7vw;
-    }
+    
     input:hover, input:focus, #descripcion:focus, #pais:focus { 
       border:#aca9d8 solid 1px;
       background-color: #d0d1d1;  
     }
+  }
 
-} 
 
 @media (max-width: 768px) {
 
