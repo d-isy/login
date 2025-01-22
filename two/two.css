@@ -1,0 +1,237 @@
+body {
+    font:bold 1.4vw arial ;
+    background: #b2c4d4  no-repeat; 
+    background-size: 50%;
+}
+#cabecera
+{ 
+  padding:20px;
+  color:  #fff;
+  background-color: #abadb3;
+  border: #9eafc0 solid 1px;
+  border-radius: 5px;
+  clear:left;
+} 
+h1{
+  margin: 10% 20%;
+  
+}
+
+img{
+/* se pueden poner como float a otros elementos  */
+  float: right;
+  position: absolute;
+  top: 10%;
+  left:  0;
+  width: 50%;
+  height:150%;
+  z-index: 1;
+}
+form {
+    border: 1px solid #dbcedc;
+    border-radius: 5vw;
+    color: #24313d;   
+    background: #f4f2f4;
+    text-align:justify; 
+    margin:7% 0% 0% 60%;
+    width: 30%;
+
+}
+
+div.contenedor{
+  flex-direction: row;
+  
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+
+}
+label {
+    margin: 2% 2% 5% 6%;
+    padding: 0.4%;
+}
+
+input,#descripcion, #pais{ 
+  font-size: 1.1vw;
+  color: #5a6167;     
+    margin: 1% 5%;
+    padding: 2%;
+    width: 80%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border:#dbcedc solid 1px;
+    border-radius: 9px;
+    
+}   
+input:hover, input:focus, #descripcion:focus, #pais:focus { 
+    border:#646379 solid 1px;
+    background-color: #d3d4d5;
+}   
+input.buscar {  
+    position: fixed;
+    margin: 1% 15% 15% 15%;
+    top: 1%;
+    left: 0;
+    width: 70%; 
+    height:20px ;
+    padding: 1.4%;
+    background: #faf7fa url(https://cdn-icons-png.flaticon.com/512/107/107122.png) no-repeat;
+    background-size: 3%;
+    background-position: 99%;
+    cursor: help;
+    z-index: 5;
+}
+div.terminos {
+    margin:1%;
+    padding:3%;
+    font-size:1vw;
+    
+}
+input[type*="checkbox"]{
+    width: 6%;
+    margin: 0% 0% 6% 7%;
+    padding:0;
+    text-align: justify;
+
+  }
+  
+a:active {  
+   color:#251212; 
+  } 
+  a:hover {
+    background-color:#000000;
+    color: #643636;
+  }       
+  a:visited {   
+    color:#131416;
+  }      
+  a:link {  
+    background-color:#d8d8d8;
+    color:#927ed3;
+  } 
+
+@media (max-width: 1024px) {
+    body {
+        background-color: #44607f;
+        background-image: none;
+        font-size: 2vw;
+    }
+    input::placeholder{
+      font-size: 1.5vw;
+    }
+    img{
+      display: none;
+    }
+    h1 {
+      text-align: center;
+        margin: 5% 10%;
+    }
+    form {
+        margin: 5% auto;
+        width: 40%;
+    }
+    input.buscar {
+      margin: 1% 15% 15% 15%;
+    top: 1%;
+    left: 0;
+    width: 70%; 
+    height:20px ;
+    padding: 1.4%;
+        
+    }
+    div.terminos{
+      
+      margin:1%;
+      padding:3%;
+      font-size:1.7vw;
+    }
+    input:hover, input:focus, #descripcion:focus, #pais:focus { 
+      border:#aca9d8 solid 1px;
+      background-color: #d0d1d1;  
+    }
+
+} 
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: #435c76;
+        background-image: none;
+        text-align: center;
+        font-size: 3vw;
+    } 
+    input #pais #descripcion {
+      font-size: 1vw;
+    }
+    h1 {
+      text-align: center;
+        margin: 10% 10%;
+    }
+    form {
+        margin: auto; 
+        width: 50%;
+    }
+    input.buscar {
+        width: 80%;
+        margin: 2% 5%;
+        position: fixed;
+        top: 0;
+        left: 5%;
+    }
+    img{
+      display: none;
+          }
+          div.terminos {
+            margin:1%;
+            padding:3%;
+            font-size:2vw;
+            
+        }
+        input:hover, input:focus, #descripcion:focus, #pais:focus { 
+          border:#635f96 solid 1px;
+          background-color: #d5d7d8;    
+        }
+
+        }
+@media (max-width: 480px) {
+
+    body {
+      background-image: none;
+        background-color: #293744;
+        background-image: none;
+    }
+    label{
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+    h1 {
+        margin: 2% 2%;
+    }
+    form {
+        margin: 5% auto;
+        width: 50%;
+    }
+    input.buscar {
+        width: 80%;
+        margin: 2% 2%;
+        position: fixed;
+        top: 0;
+        left: 2.5%;
+    }
+    img {
+      display: none;
+    }
+    div.terminos {
+      margin:1%;
+      padding:3%;
+      font-size:2vw;
+      
+  }
+  input:hover, input:focus, #descripcion:focus, #pais:focus { 
+    border:#514a6b solid 1px;
+    background-color: #dbdfe1;  
+  }
+
+} 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="two.css">
+    <link rel="shortcut icon" href="/Saved Pictures/blanco.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body> 
+        
+
+    <div id="cabecera">
+    
+        <div class="search">
+            <input class="buscar" type="search" placeholder="buscar">
+        </div>
+            
+    </div>
+
+        <img src="/Saved Pictures/blanco.jpg" alt="imagen">
+
+    <div class="contenedor">
+    <form class="formulario" action="registrardatos.php" method="post">
+        <div>
+        <h1>formulario</h1>
+        
+            <label for="nombre">Ingrese su nombre</label>
+        <br>
+                    <input type="text" id="nombre"required name="nombre" placeholder="nombre">
+        <br>
+                <label for="edad">Ingrese su edad</label>
+        <br>
+                    <input type="number " id="edad" required name="edad" placeholder="edad">
+        <br>
+                <label for="email">Ingrese su correo electronico</label>
+        <br>
+                    <input type="email" id="email" required name="email" placeholder="email">
+        <br>
+                <label for="contraseña">Ingrese su contraseña</label>
+        <br>
+                    <input type="password" id="contraseña" required name="contraseña" placeholder="clave">
+        <br>
+                <label for="fecha">Ingrese su fecha de nacimiento</label>
+        <br>
+                    <input type="date" id="fecha" required name="fecha" >
+        <br>
+                <label for="telefono">Ingrese su numero de telefono</label>
+        <br>
+                    <input type="number" id="telefono" required name="telefono" placeholder="telefono">
+        <br>
+                <label for="documento">Adjunte su documento </label>
+        <br>
+                    <input type="file" id="documento" required name="documento de identidad" >
+        <br>
+                <label for="color">Seleccione su color favorito</label>
+        <br>
+                    <input type="color" id="color" required name="color" >
+        <br>
+        <label for="pais">Seleccione su país</label>
+        <br>
+                    <select name="pais" id="pais">
+                        <option value="1">colombia</option>
+                        <option value="2">otro</option>
+                    </select>
+        <br>
+        <label for="descripcion">Describa su país</label>
+        <br>
+                    <textarea name="descripcion" id="descripcion">descripción</textarea>
+        <br>
+            <div class="terminos">
+                <label for="acepta_terminos"></label>
+            <input type="checkbox" id="acepta_terminos"> 
+            
+                <a href="https://www.google.com/search?q=no+hay&rlz=1C1GCEA_enCO1118CO1118&oq=no+hay&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBwgCEC4YgAQyBwgDEC4YgAQyBwgEEC4YgAQyBwgFEC4YgAQyBwgGEC4YgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEC4YgATSAQkzMDg5ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8">acepta terminos y condiciones</a>
+            </label>
+            </div>
+</div>
+    </form>  
+    <div class="enviar">
+    <input type="submit" name="enviar" value="envia"> 
+    </div>
+    </div>
+
+</body>
+</html>
